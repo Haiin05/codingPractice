@@ -10,11 +10,11 @@ def solution(numbers, hand):
     left_side = [1, 4, 7]
     right_side = [3, 6, 9]
     
-    # 바뀌는 키패드 좌표
-    key = keypad[num]
-    
     # 입력된 숫자들 체크
     for num in numbers :
+         # 바뀌는 키패드 좌표
+        key = keypad[num]
+        
         if num in left_side :
             answer += 'L'
             left = key
